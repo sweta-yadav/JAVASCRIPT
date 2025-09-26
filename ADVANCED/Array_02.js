@@ -27,5 +27,11 @@ console.log(Array.from("javascript"));//it will convert the string into array wi
 console.log(Array.from({name:"javascript"}));   //it will convert the object into array with key as index and value as value
 
 
+let score1=100
+let score2=200
+let score3=300
+console.log(Array.of(score1,score2,score3));//it will convert the given elements into array
+
+
 
 
