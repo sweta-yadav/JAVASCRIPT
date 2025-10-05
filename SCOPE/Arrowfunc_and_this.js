@@ -51,6 +51,3 @@ console.log(func(3,5))
 const func2=(c,d) => ({username:"sweta"})
 console.log(func2(8,8))
 
-
-
-

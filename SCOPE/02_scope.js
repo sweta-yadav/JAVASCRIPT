@@ -6,7 +6,7 @@ function one(){
         const website="youtube"
         console.log(username);
     }
-    //console.log(website); this line will give error because website is not defined in this scope const is under thw upper scope only so
+    //console.log(website); this line will give error because website is not defined in this scope const is under the upper scope only so
     two()
 
 }
