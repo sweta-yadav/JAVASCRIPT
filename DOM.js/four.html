@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 3</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+<script>
+    function addLanguage(langname){
+        const li=document.createElement('li')
+        li.innerHTML=`${langname}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("typescript")
+
+//this method is more preferable 
+    function addoptilanguage(langname){
+       const li= document.createElement('li')
+       li.appendChild(document.createTextNode(langname))
+       document.querySelector('.language').appendChild(li)
+    }
+addoptilanguage('golang')
+
+
+  //Edit
+  const secondLang=document.querySelector("li:nth-child(2)")
+  //1.by using innerhtml
+  //secondLang.innerHTML="mojo"
+
+  //2.by creating whole new element and replace 
+  const newli=document.createElement('li')
+  newli.textContent="mojo"
+  secondLang.replaceWith(newli)
+
+  //edit ex:2 3.using outerhtml
+   const firstLang=document.querySelector("li:first-child")
+  firstLang.outerHTML='<li>TypeScript</li>'
+
+
+  //remove
+  const lastlang=document.querySelector('li:last-child')
+  lastlang.remove()
+  
+
+
+
+
+
+
+
+
+</script>
+    
+</body>
+</html>
