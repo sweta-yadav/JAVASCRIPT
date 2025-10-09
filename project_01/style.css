@@ -1,0 +1,46 @@
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #333;
+}
+
+/* Color styles for each button */
+#grey {
+  background-color: grey;
+}
+
+#white {
+  background-color: white;
+}
+
+#blue {
+  background-color: lightblue;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+h2 {
+  margin-top: 30px;
+  color: #333;
+}
+
+span {
+  font-weight: normal;
+}
