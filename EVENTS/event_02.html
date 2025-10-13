@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events </title>
+</head>
+<body>
+    <h1>JAVASCRIPT</h1>
+    <button>stop</button>
+    <script>
+        const sayjs=function(){
+            console.log("learning javascript.......")
+        }
+        setTimeout(sayjs,2000)
+
+
+        const changeText=function(){
+            document.querySelector('h1').innerHTML="learning JS is fun.."
+        }
+        setTimeout(changeText,2000)
+
+        document.querySelector('button').addEventListener('click',function(){
+            console.log("STOPPED");
+        })
+
+
+        
+    </script>
+</body>
+</html>
