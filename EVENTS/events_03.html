@@ -17,20 +17,24 @@
         // clearInterval(change)
 
         //pendingggg.............
-
-        document.querySelector('start').addEventListener('click',function(str){
+        const start=function(){
             console.log("sweta",Date.now());
         }
-        setInterval(func,2000,"hello")
+        document.querySelector('start').addEventListener('click',start())
+        const stop=function(){
+            clearInterval(intervalid);
+            intervalid=null;
+        }
+        document.querySelector('stop').addEventListener('click',stop())
+    
 
-
-        )
-        document.querySelector('stop'.addEventListener(function(){
-
-
-
-
-        }))
+        // document.querySelector('start').addEventListener('click',function(str){
+        //     console.log("sweta",Date.now());
+        // }
+        // setInterval(func,2000,"hello")
+        // )
+        // document.querySelector('stop'.addEventListener(function(){
+        // }))
     </script>
     
 </body>
