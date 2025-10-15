@@ -18,3 +18,10 @@ A fetch() promise only rejects when the request fails, for example, because of a
  abstraction
  Encapsulation
  plymorphism
+
+
+ ## behind the scenes when the new keyword is used:
+ a new object is linked:the newly created object gets linked to the it has access to properties and methodd defined on the constror's prototype
+
+
+ the constructor is called:the constructor is called with the specified arguments and this is bound to the newly created object.
