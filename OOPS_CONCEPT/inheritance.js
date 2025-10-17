@@ -34,9 +34,3 @@ nik.logMe();//but nik have access to logme clss as it extends the user class
 
 console.log(nik===sus)
 console.log(nik instanceof User)
-
-
-
-
-
-
